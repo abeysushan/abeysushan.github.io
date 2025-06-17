@@ -1,19 +1,56 @@
 ---
-title: "About"
-image: profile.jpg
+title: "Abey Sushan"
+image: Abey-Sushan.jpg
 about:
-  template: jolla
+  template: solana
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/AbeySushan
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/in/abeysushan
     - icon: github
       text: Github
-      href: https://github.com
-
+      href: https://github.com/abeysushan
 ---
 
-About this blog
+Passionate about public health. Over a decade of experience in primary care and programme management settings. Focusing on health system strengthening, noncommunicable diseases epidemiology and outbreak science.
+
+## Experience
+
+| Year | Designation | Organisation |
+|----|----|----|
+| October 2023 - present | State Urban Health Manager | National Health Mission, Kerala |
+| 2016 - 2021 | District Programme Manager | National Health Mission, Kerala |
+| 2024 - present | Jr. Administative Medical Officer | Directorate of Health Services, Kerala |
+| 2014 - 2024 | Assistant Surgeon | Directorate of Health Services, Kerala |
+
+## Education
+
+| Degree | Institution | Period |
+|----|----|----|
+| Master of Public Health | ICMR-National Institute of Epidemiology, Chennai | 2021 - 2023 |
+| Postgraduate Diploma in Healthcare Quality Management | Tata Institute of Social Sciences, Mumbai | 2019 - 2021 |
+| Master of Business Administration | ICFAI University, Tripura | 2018 - 2021 |
+| MBBS | Medical College, Thiruvananthapuram, Kerala | 2006 - 2011 |
+
+## Publications
+
+1\. Mathew G, Sebastian SR, Benjamin AI, Goyal V, Sushan A, Joseph J, et al. Cancer burden and alarm signals: a community based study from Kerala, India. Int J Res Med Sci \[Internet\]. 2020 Jan 27 \[cited 2020 May 2\];8(2):681. Available from: <https://www.msjonline.org/index.php/ijrms/article/view/7637>
+
+2\. Mathew G, Sebastian S, Benjamin A, Goyal V, Joseph J, Sushan A, et al. Community-based burden, warning signs, and risk factors of cancer using public-private partnership model in Kerala, India. J Family Med Prim Care \[Internet\]. 2020 \[cited 2020 May 2\];9(2):745. Available from: <http://www.jfmpc.com/text.asp?2020/9/2/745/279244>
+
+3\. Sushan A, Krishna A, Robinson A, K B, SA R. Evaluation of National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular diseases and Stroke (NPCDCS) in Pathanamthitta district of Kerala, India, 2022. ICMR-School of Public Health, ICMR-National Institute of Epidemiology, Chennai, India; 2022.
+
+4\. Sushan A, Shivakumar SVBY, Robinson A, Kumaran AV. Outbreak of Influenza A - H3N2v, in the United States of America, 2022. 2023 Feb 10 \[cited 2024 Jun 12\];5(1). Available from: <https://jglobalbiosecurity.com/articles/10.31646/gbio.192>
+
+5\. Mathew G, Bava N, Varghese AD, Sushan A, Benjamin AI. Project Vayoraksha: Implementation of novel mHealth technology for healthcare delivery during COVID-19 in geriatric population of Kerala. Indian J Med Res \[Internet\]. 2024 Jul 19 \[cited 2024 Sep 12\];159(3 & 4):289–97. Available from: <https://ijmr.org.in/project-vayoraksha-implementation-of-novel-mhealth-technology-for-healthcare-delivery-during-covid-19-in-geriatric-population-of-kerala/>
+
+6\. Menon GR, Yadav J, Aggarwal S, Singh R, Kaur S, Chakma T, et al. Psychological distress and burnout among healthcare worker during COVID-19 pandemic in India—A cross-sectional study. PLOS ONE \[Internet\]. 2022 Mar 10 \[cited 2022 May 25\];17(3):e0264956. Available from: <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264956>
+
+7\. Bava N, Sreekumar S, Mathew G, Sushan A, Sheeja A, Parvathy P. Strategies for COVID-19 control among migrant labourers in a developing country setting: Pathanamthitta model from Kerala. J Family Med Prim Care \[Internet\]. 2021 \[cited 2021 Jul 18\];10(6):2342. Available from: <http://www.jfmpc.com/text.asp?2021/10/6/2342/320473>
+
+8\. Varghese S, Sheeja A, Samuel Johnson A, Sushan A, Nandini C, Chandy G, et al. Together let us confront it: An outbreak investigation of hepatitis B in Pathanamthitta district, Kerala. J Family Med Prim Care \[Internet\]. 2021 \[cited 2021 Jul 18\];10(6):2159. Available from: <http://www.jfmpc.com/text.asp?2021/10/6/2159/320471>
+
+9\. Sushan A, Mohan M, Robinson A, Krishna A, Kangusamy B, Muthappan S, et al. Unmet needs to achieve disease control among patients with hypertension and diabetes, Pathanamthitta, Kerala, India, 2023: A mixed methods study. Clinical Epidemiology and Global Health \[Internet\]. 2025 Apr 19 \[cited 2025 Apr 20\];102036. Available from: <https://www.sciencedirect.com/science/article/pii/S2213398425001253>
