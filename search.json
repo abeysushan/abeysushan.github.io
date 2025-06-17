@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "abeysushan.github.io",
+    "section": "",
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 14, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Abey Sushan",
@@ -28,24 +42,10 @@
     "text": "Publications\n1. Mathew G, Sebastian SR, Benjamin AI, Goyal V, Sushan A, Joseph J, et al. Cancer burden and alarm signals: a community based study from Kerala, India. Int J Res Med Sci [Internet]. 2020 Jan 27 [cited 2020 May 2];8(2):681. Available from: https://www.msjonline.org/index.php/ijrms/article/view/7637\n2. Mathew G, Sebastian S, Benjamin A, Goyal V, Joseph J, Sushan A, et al. Community-based burden, warning signs, and risk factors of cancer using public-private partnership model in Kerala, India. J Family Med Prim Care [Internet]. 2020 [cited 2020 May 2];9(2):745. Available from: http://www.jfmpc.com/text.asp?2020/9/2/745/279244\n3. Sushan A, Krishna A, Robinson A, K B, SA R. Evaluation of National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular diseases and Stroke (NPCDCS) in Pathanamthitta district of Kerala, India, 2022. ICMR-School of Public Health, ICMR-National Institute of Epidemiology, Chennai, India; 2022.\n4. Sushan A, Shivakumar SVBY, Robinson A, Kumaran AV. Outbreak of Influenza A - H3N2v, in the United States of America, 2022. 2023 Feb 10 [cited 2024 Jun 12];5(1). Available from: https://jglobalbiosecurity.com/articles/10.31646/gbio.192\n5. Mathew G, Bava N, Varghese AD, Sushan A, Benjamin AI. Project Vayoraksha: Implementation of novel mHealth technology for healthcare delivery during COVID-19 in geriatric population of Kerala. Indian J Med Res [Internet]. 2024 Jul 19 [cited 2024 Sep 12];159(3 & 4):289–97. Available from: https://ijmr.org.in/project-vayoraksha-implementation-of-novel-mhealth-technology-for-healthcare-delivery-during-covid-19-in-geriatric-population-of-kerala/\n6. Menon GR, Yadav J, Aggarwal S, Singh R, Kaur S, Chakma T, et al. Psychological distress and burnout among healthcare worker during COVID-19 pandemic in India—A cross-sectional study. PLOS ONE [Internet]. 2022 Mar 10 [cited 2022 May 25];17(3):e0264956. Available from: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264956\n7. Bava N, Sreekumar S, Mathew G, Sushan A, Sheeja A, Parvathy P. Strategies for COVID-19 control among migrant labourers in a developing country setting: Pathanamthitta model from Kerala. J Family Med Prim Care [Internet]. 2021 [cited 2021 Jul 18];10(6):2342. Available from: http://www.jfmpc.com/text.asp?2021/10/6/2342/320473\n8. Varghese S, Sheeja A, Samuel Johnson A, Sushan A, Nandini C, Chandy G, et al. Together let us confront it: An outbreak investigation of hepatitis B in Pathanamthitta district, Kerala. J Family Med Prim Care [Internet]. 2021 [cited 2021 Jul 18];10(6):2159. Available from: http://www.jfmpc.com/text.asp?2021/10/6/2159/320471\n9. Sushan A, Mohan M, Robinson A, Krishna A, Kangusamy B, Muthappan S, et al. Unmet needs to achieve disease control among patients with hypertension and diabetes, Pathanamthitta, Kerala, India, 2023: A mixed methods study. Clinical Epidemiology and Global Health [Internet]. 2025 Apr 19 [cited 2025 Apr 20];102036. Available from: https://www.sciencedirect.com/science/article/pii/S2213398425001253"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "abeysushan.github.io",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 17, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 14, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]

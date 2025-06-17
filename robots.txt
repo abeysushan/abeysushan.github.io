@@ -1,1 +1,1 @@
-Sitemap: https://abeysushan.github.io/sitemap.xml
+Sitemap: https://blog.hquotient.org/sitemap.xml
