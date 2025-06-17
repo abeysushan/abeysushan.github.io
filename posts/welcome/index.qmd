@@ -1,12 +1,18 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2025-06-14"
+title: "Why this space?"
+author: "Abey Sushan"
+date: "2025-06-17"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+I have tried all platforms to try and document what I find interesting... tumblr, blogger, wordpress... But the tinkerer in me was never satisfied. He was always on the look-out for something else to tinker with. This too, is one such effort. But this time, there is a difference. 
+
+While the earlier ones were vain efforts at self actualization, this space has a goal. I want to nurture this space as a place to document the few things I find interesting -- mostly in the public health domain of India, but not exclusively. 
 
 ![](thumbnail.jpg)
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+May be it will turn out to be a public health digest, I don't know yet. But I am here to see where this leads.
+
+::: {.callout-note}
+This space is not intended to be educational.
+:::
