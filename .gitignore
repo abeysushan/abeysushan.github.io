@@ -1,0 +1,42 @@
+
+# Quarto output directories
+_site/
+_publish/
+
+# R / Python related files (if applicable)
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rproj.user/*
+.Rprofile
+.Rapp.history
+
+
+# Mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+._*
+
+# Thumbnails
+._.DS_Store
+
+# Quarto metadata
+.quarto/
+
+# Logs and temporary files
+*.log
+*.aux
+*.out
+*.toc
+*.nav
+*.snm
+*.tmp
+*.bak
+*.swp
+
+
