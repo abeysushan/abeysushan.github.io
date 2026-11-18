@@ -2,7 +2,7 @@
 title:
 author: "Abey Sushan"
 date: "18 November 2026"
-categories: [public health] [measles] [immunization]
+categories: [public health, measles, immunization]
 ---
 
 The Pan American Health Organization’s November 17, 2026 decision to revoke the United States’ measles-elimination status marks a profound, self-inflicted failure in modern public health. Held continuously since 2000, that designation collapsed after the same viral lineage circulated uninterrupted for more than twelve months. By November 2026, the Centers for Disease Control and Prevention had confirmed 5,412 cases across nearly every state—more than double 2025’s tally and the highest national burden since 1991—alongside 48 outbreaks, multiple deaths, over 160 infections in pregnant women since 2025, and 13 cases of congenital measles. Escalating outbreaks in West Texas, South Carolina, and Pennsylvania exposed a sobering reality: biological elimination without institutional vigilance is entirely reversible.
