@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.hquotient.org/posts/welcome/index.html</loc>
-    <lastmod>2025-06-18T06:05:19.837Z</lastmod>
+    <loc>https://blog.hquotient.org/about.html</loc>
+    <lastmod>2026-11-18T06:42:20.767Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.hquotient.org/about.html</loc>
-    <lastmod>2025-06-18T06:05:19.837Z</lastmod>
+    <loc>https://blog.hquotient.org/posts/us-measles-2026/index.html</loc>
+    <lastmod>2026-11-18T06:42:20.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.hquotient.org/posts/welcome/index.html</loc>
+    <lastmod>2026-11-18T06:42:20.768Z</lastmod>
   </url>
   <url>
     <loc>https://blog.hquotient.org/index.html</loc>
-    <lastmod>2025-06-18T06:05:19.837Z</lastmod>
+    <lastmod>2026-11-18T06:42:20.767Z</lastmod>
   </url>
 </urlset>
