@@ -1,5 +1,5 @@
 ---
-title:
+title: "Lessons from the recent loss of measles elimination status by the US"
 author: "Abey Sushan"
 date: "18 November 2026"
 categories: [public health, measles, immunization]
