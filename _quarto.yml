@@ -2,18 +2,20 @@ project:
   type: website
 
 website:
-  title: "blog.hquotient.org"
+  title: "H Quotient"
   navbar:
     right:
       - about.qmd
       - icon: github
         href: https://github.com/abeysushan
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/AbeySushan
+      - icon: linkedin
+        href: https://linkedin.com/abeysushan
 format:
   html:
     theme:
-      - cosmo
+      - journal
       - brand
     css: styles.css
 
