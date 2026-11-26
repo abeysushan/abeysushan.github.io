@@ -1,8 +1,11 @@
-# options specified here will apply to all posts in this folder
+# Options specified here apply to all posts in this folder.
 
-# freeze computational output
+# Freeze computational output locally so CI does not need to run R/Python.
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: true
 
-# Enable banner style title blocks
+# Keep post headers minimal and editorial
 title-block-banner: false
+author: "Abey Sushan"
+date-format: "D MMMM YYYY"
+toc: false

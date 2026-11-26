@@ -1,0 +1,28 @@
+```{=html}
+<div class="df-stream">
+<% for (const item of items) { %>
+  <article class="df-entry" <%= metadataAttrs(item) %>>
+    <div class="df-entry-date"><%= item.date %></div>
+    <h2 class="df-entry-title">
+      <% if (item['external-url']) { %>
+        <a class="df-title-link df-external-link" href="<%- item['external-url'] %>" target="_blank" rel="noopener"><%= item.title %></a>
+        <a class="df-permalink" href="<%- item.path %>" title="Permalink" aria-label="Permalink to <%= item.title %>">&#9733;</a>
+      <% } else { %>
+        <a class="df-title-link" href="<%- item.path %>"><%= item.title %></a>
+        <a class="df-permalink" href="<%- item.path %>" title="Permalink" aria-label="Permalink to <%= item.title %>">&#9733;</a>
+      <% } %>
+    </h2>
+    <% if (item.description) { %>
+      <p class="df-entry-excerpt"><%= item.description %></p>
+    <% } %>
+    <div class="df-entry-footer">
+      <a class="df-read-more" href="<%- item.path %>">Read more &rarr;</a>
+      <% if (item.categories && item.categories.length > 0) { %>
+        <span class="df-entry-sep" aria-hidden="true">&middot;</span>
+        <span class="df-entry-categories"><%= item.categories.join(' · ') %></span>
+      <% } %>
+    </div>
+  </article>
+<% } %>
+</div>
+```

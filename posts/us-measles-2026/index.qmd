@@ -1,7 +1,8 @@
 ---
 title: "Lessons from the recent loss of measles elimination status by the US"
 author: "Abey Sushan"
-date: "18 November 2026"
+date: "2026-11-18"
+description: "PAHO's revocation of the United States' measles-elimination status exposes how quickly biological gains unravel without institutional vigilance—and what it warns for India and Kerala."
 categories: [public health, measles, immunization]
 ---
 

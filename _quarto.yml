@@ -1,23 +1,47 @@
 project:
   type: website
+  resources:
+    - CNAME
 
 website:
   title: "H Quotient"
-  navbar:
-    right:
-      - about.qmd
-      - icon: github
-        href: https://github.com/abeysushan
-      - icon: twitter
-        href: https://twitter.com/AbeySushan
-      - icon: linkedin
-        href: https://linkedin.com/abeysushan
+  site-url: https://blog.hquotient.org
+  description: "notes on public health practice - by Abey Sushan."
+  favicon: favicon.svg
+  open-graph: true
+  twitter-card: true
+  sidebar:
+    style: floating
+    border: false
+    search: true
+    collapse-level: 2
+    contents:
+      - text: "Writing"
+        href: index.qmd
+      - text: "Archive"
+        href: archive.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "RSS Feed"
+        href: index.xml
+      - section: "Elsewhere"
+        contents:
+          - text: "GitHub"
+            href: https://github.com/abeysushan
+            target: _blank
+          - text: "LinkedIn"
+            href: https://linkedin.com/in/abeysushan
+            target: _blank
+          - text: "X / Twitter"
+            href: https://twitter.com/AbeySushan
+            target: _blank
+  page-footer:
+    left: "© Abey Sushan · H Quotient"
+    right: "[RSS](/index.xml) · [Archive](/archive.qmd) · [About](/about.qmd)"
+
 format:
   html:
-    theme:
-      - journal
-      - brand
-    css: styles.css
-
-
-
+    theme: theme/daring-offwhite.scss
+    toc: false
+    date-format: "D MMMM YYYY"
+    highlight-style: arrow

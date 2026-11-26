@@ -1,4 +1,3 @@
-
 # Quarto output directories
 _site/
 _publish/
@@ -11,7 +10,6 @@ _publish/
 .Rproj.user/*
 .Rprofile
 .Rapp.history
-
 
 # Mac system files
 .DS_Store
@@ -39,6 +37,5 @@ Icon
 *.bak
 *.swp
 
-
-
 /.quarto/
+**/*.quarto_ipynb

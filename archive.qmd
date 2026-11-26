@@ -1,0 +1,12 @@
+---
+title: "Archive"
+pagetitle: "Archive — H Quotient"
+listing:
+  contents: posts
+  sort: "date desc"
+  template: templates/archive.ejs
+  categories: false
+  sort-ui: false
+  filter-ui: false
+title-block-banner: false
+---

@@ -1,0 +1,30 @@
+```{=html}
+<div class="df-archive">
+<%
+  const groups = {};
+  const yearOrder = [];
+  for (const item of items) {
+    const match = String(item.date || '').match(/\b(20\d{2}|19\d{2})\b/);
+    const year = match ? match[1] : 'Other';
+    if (!groups[year]) {
+      groups[year] = [];
+      yearOrder.push(year);
+    }
+    groups[year].push(item);
+  }
+%>
+<% for (const year of yearOrder) { %>
+  <section class="df-archive-year">
+    <h2 class="df-archive-year-heading"><%= year %></h2>
+    <ul class="df-archive-list">
+      <% for (const item of groups[year]) { %>
+        <li class="df-archive-item" <%= metadataAttrs(item) %>>
+          <span class="df-archive-date"><%= item.date %></span>
+          <a class="df-archive-link" href="<%- item.path %>"><%= item.title %></a>
+        </li>
+      <% } %>
+    </ul>
+  </section>
+<% } %>
+</div>
+```

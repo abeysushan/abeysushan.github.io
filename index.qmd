@@ -1,14 +1,20 @@
 ---
-title: "Abey's blog"
+pagetitle: "H Quotient"
+body-classes: df-home
 listing:
   contents: posts
   sort: "date desc"
-  type: default
-  categories: true
+  template: templates/listing.ejs
+  categories: false
   sort-ui: false
   filter-ui: false
-page-layout: full
-title-block-banner: true
+  feed:
+    type: full
+    title: "H Quotient"
+    description: "notes on public health practice - by Abey Sushan."
+title-block-banner: false
 ---
 
-
+::: {.df-masthead}
+notes on public health practice - by Abey Sushan.
+:::

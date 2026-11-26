@@ -1,0 +1,966 @@
+/*-- scss:defaults --*/
+
+// Daring Fireball–inspired minimal off-white palette
+$df-bg:             #F7F6F2;
+$df-surface:        #EFECE4;
+$df-surface-hover:  #EAE6DC;
+$df-ink:            #232629;
+$df-ink-strong:     #111315;
+$df-slate:          #656B73;
+$df-slate-muted:    #868C94;
+$df-rule:           #DCD9D0;
+$df-quote-rule:     #C4C0B5;
+$df-link:           #2E3742;
+$df-link-underline: #9AA1AA;
+
+// Bootstrap / Quarto variable overrides
+$body-bg:                $df-bg;
+$body-color:             $df-ink;
+$link-color:             $df-link;
+$link-hover-color:       $df-ink-strong;
+$border-color:           $df-rule;
+$hr-color:               $df-rule;
+$hr-opacity:             1;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace:  ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+$font-size-base:         1rem;
+$line-height-base:       1.64;
+
+$headings-font-family:   $font-family-sans-serif;
+$headings-font-weight:   600;
+$headings-color:         $df-ink-strong;
+$headings-line-height:   1.3;
+
+$code-bg:                $df-surface;
+$code-color:             $df-ink;
+$pre-bg:                 $df-surface;
+$blockquote-color:       $df-ink;
+$table-border-color:     $df-rule;
+$table-bg:               transparent;
+
+$sidebar-bg:             $df-bg;
+$sidebar-fg:             $df-slate;
+$sidebar-hl:             $df-ink-strong;
+
+$footer-bg:              $df-bg;
+$footer-fg:              $df-slate;
+
+/*-- scss:rules --*/
+
+html {
+  font-size: 14.5px;
+  background-color: $df-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $df-bg;
+  color: $df-ink;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+// -----------------------------------------------------------------------------
+// Layout: Centered classic Daring Fireball left-rail + narrow reading column
+// -----------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+  body.floating #quarto-content.page-columns,
+  body.floating.fullcontent #quarto-content.page-columns,
+  #quarto-content.page-columns {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: grid !important;
+    column-gap: 2.15rem !important;
+    row-gap: 0 !important;
+    grid-template-columns:
+      [screen-start screen-start-inset page-start page-start-inset sidebar-start]
+      155px
+      [sidebar-end body-start-outset body-start body-content-start]
+      minmax(0, 1fr)
+      [body-content-end body-end body-end-outset margin-start margin-end page-end-inset page-end screen-end-inset screen-end] !important;
+  }
+
+  #quarto-sidebar-glass {
+    display: none !important;
+  }
+
+  body.floating #quarto-content.page-columns #quarto-sidebar,
+  #quarto-sidebar {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 !important;
+    position: sticky;
+    top: 2.5rem !important;
+    align-self: start;
+    width: 155px !important;
+    min-width: 0 !important;
+    max-height: calc(100vh - 4rem);
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    > * {
+      padding-right: 0 !important;
+    }
+
+    .sidebar-menu-container {
+      min-width: 0 !important;
+      white-space: normal;
+    }
+  }
+
+  #quarto-margin-sidebar {
+    display: none !important;
+  }
+
+  body.floating #quarto-content.page-columns main.content,
+  main.content {
+    grid-column: 2 / 3 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #quarto-header {
+    background-color: $df-bg !important;
+    border-bottom: 1px solid $df-rule !important;
+    box-shadow: none !important;
+  }
+
+  .quarto-secondary-nav {
+    background-color: $df-bg !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .quarto-secondary-nav .quarto-page-breadcrumbs .breadcrumb {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $df-slate;
+    margin-bottom: 0;
+  }
+
+  #quarto-sidebar.sidebar {
+    background-color: $df-bg !important;
+    border-right: 1px solid $df-rule !important;
+  }
+
+  main.content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Left-rail sidebar (Daring Fireball quiet navigation)
+// -----------------------------------------------------------------------------
+
+#quarto-sidebar {
+  font-size: 0.82rem;
+
+  .sidebar-header {
+    margin: 0 0 0.5rem 0 !important;
+    padding: 0 0 0.6rem 0 !important;
+    height: 2.15rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid $df-rule;
+    display: flex !important;
+    align-items: flex-end;
+  }
+
+  .sidebar-title {
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1.25;
+
+    a {
+      color: $df-ink-strong;
+      text-decoration: none;
+      border-bottom: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+
+      &::before {
+        content: "\2605";
+        font-size: 0.95rem;
+        line-height: 1;
+        color: $df-ink-strong;
+      }
+
+      &:hover {
+        color: $df-slate;
+        background: transparent;
+      }
+    }
+  }
+
+  .sidebar-search {
+    margin: 0.85rem 0 1.1rem 0;
+    padding: 3px;
+
+    #quarto-search {
+      width: 100%;
+    }
+
+    .aa-Autocomplete .aa-Form {
+      background-color: $df-bg;
+      border: 1px solid $df-rule;
+      border-radius: 3px;
+      box-shadow: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+      &:focus-within,
+      &:has(.aa-Input:focus-visible) {
+        border-color: $df-slate !important;
+        outline: none !important;
+        outline-offset: 0 !important;
+        box-shadow: 0 0 0 2px rgba(101, 107, 115, 0.2) !important;
+      }
+
+      .aa-Input {
+        font-size: 0.84rem;
+      }
+    }
+
+    .aa-DetachedSearchButton {
+      background-color: transparent !important;
+      border: 1px solid $df-rule !important;
+      border-radius: 3px !important;
+      color: $df-slate !important;
+      font-size: 0.76rem !important;
+      height: 28px !important;
+      padding: 0 0.5rem !important;
+      box-shadow: none !important;
+
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        border-color: $df-slate !important;
+        outline: none !important;
+        box-shadow: 0 0 0 2px rgba(101, 107, 115, 0.2) !important;
+        background-color: $df-surface !important;
+      }
+    }
+
+    .aa-DetachedSearchButtonIcon {
+      width: 15px;
+      color: $df-slate;
+    }
+
+    .aa-DetachedSearchButtonPlaceholder {
+      font-size: 0.74rem;
+      letter-spacing: 0.04em;
+      color: $df-slate-muted;
+    }
+  }
+
+  .sidebar-menu-container {
+    padding: 0;
+  }
+
+  ul.list-unstyled {
+    margin: 0;
+    padding: 0;
+  }
+
+  li.sidebar-item {
+    margin-bottom: 0.2rem;
+  }
+
+  .sidebar-item-text,
+  a.sidebar-link {
+    display: block;
+    padding: 0.22rem 0 !important;
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $df-slate;
+    text-decoration: none;
+    border-bottom: none;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $df-ink-strong;
+      background-color: transparent;
+    }
+  }
+
+  a.sidebar-link.active {
+    color: $df-ink-strong !important;
+    font-weight: 700;
+  }
+
+  .sidebar-item-section {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid $df-rule;
+
+    .sidebar-item-container {
+      margin-bottom: 0.3rem;
+    }
+
+    button.sidebar-item-toggle {
+      display: block !important;
+      width: 100%;
+      padding: 0 !important;
+      border: none !important;
+      background: transparent !important;
+      font-size: 0.64rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: $df-slate-muted;
+      cursor: default;
+      pointer-events: none;
+
+      .bi-chevron-right {
+        display: none !important;
+      }
+    }
+  }
+
+  .sidebar-section {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    border-left: none !important;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Typography & Editorial Links (Signature Daring Fireball treatment)
+// -----------------------------------------------------------------------------
+
+main.content {
+  a:not(.df-title-link):not(.df-permalink):not(.df-read-more):not(.df-archive-link):not(.anchorjs-link):not(.footnote-ref):not(.footnote-back) {
+    color: $df-link;
+    text-decoration: none;
+    border-bottom: 1px solid $df-link-underline;
+    padding-bottom: 1px;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+
+    &:hover {
+      color: $df-ink-strong;
+      border-bottom-color: $df-ink-strong;
+      background-color: $df-surface;
+    }
+  }
+
+  p {
+    margin-bottom: 1.15rem;
+  }
+
+  h1, .h1 {
+    font-size: 1.48rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.26;
+    margin-bottom: 0.75rem;
+    color: $df-ink-strong;
+  }
+
+  h2, .h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid $df-rule;
+    color: $df-ink-strong;
+  }
+
+  h3, .h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: $df-ink-strong;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid $df-rule;
+    margin: 2rem 0;
+    opacity: 1;
+  }
+
+  // Blockquotes: classic Daring Fireball indented left rule
+  blockquote {
+    margin: 1.5rem 0 1.5rem 0.25rem;
+    padding: 0.15rem 0 0.15rem 1.2rem;
+    border-left: 2px solid $df-quote-rule;
+    color: #3A3F45;
+    font-size: 0.96rem;
+    line-height: 1.65;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Code & Preformatted text
+  code {
+    background-color: $df-surface;
+    color: $df-ink;
+    padding: 0.12em 0.36em;
+    border-radius: 3px;
+    font-size: 0.87em;
+  }
+
+  pre, div.sourceCode {
+    background-color: $df-surface !important;
+    border: 1px solid $df-rule;
+    border-radius: 3px;
+    padding: 0.9rem 1.1rem;
+    margin: 1.5rem 0;
+    font-size: 0.86rem;
+    line-height: 1.55;
+
+    code {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  // Quarto Callouts: restrained editorial note block
+  .callout {
+    background-color: $df-surface !important;
+    border: none !important;
+    border-left: 2px solid $df-slate !important;
+    border-radius: 0 !important;
+    margin: 1.65rem 0;
+    padding: 0.85rem 1.15rem !important;
+    box-shadow: none !important;
+
+    .callout-header {
+      background-color: transparent !important;
+      padding: 0 0 0.35rem 0 !important;
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: $df-slate;
+    }
+
+    .callout-icon-container {
+      display: none;
+    }
+
+    .callout-body-container,
+    .callout-body {
+      padding: 0 !important;
+      font-size: 0.94rem;
+      color: $df-ink;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Tables: clean booktabs-style hairlines & tabular numerals
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0 2rem 0;
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
+    background-color: transparent;
+
+    thead th {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: $df-slate;
+      border-top: 1px solid $df-ink;
+      border-bottom: 1px solid $df-rule;
+      padding: 0.6rem 0.75rem 0.6rem 0;
+      text-align: left;
+      background: transparent;
+    }
+
+    tbody td {
+      padding: 0.65rem 0.75rem 0.65rem 0;
+      border-bottom: 1px solid $df-rule;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 1px solid $df-ink;
+    }
+
+    tbody tr:nth-of-type(odd),
+    tbody tr:hover {
+      background-color: transparent !important;
+      --bs-table-accent-bg: transparent !important;
+    }
+  }
+
+  // Footnotes (Daring Fireball classic)
+  section.footnotes {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid $df-rule;
+    font-size: 0.88rem;
+    color: $df-slate;
+
+    hr {
+      display: none;
+    }
+
+    ol {
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  a.footnote-ref {
+    text-decoration: none;
+    color: $df-slate;
+    font-size: 0.76em;
+    padding: 0 0.15em;
+    &:hover {
+      color: $df-ink-strong;
+    }
+  }
+
+  // Images
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Homepage Masthead & Editorial Post Stream
+// -----------------------------------------------------------------------------
+
+main.content .df-masthead,
+.df-masthead {
+  margin: 0 0 1.75rem 0 !important;
+  padding: 0 0 0.6rem 0 !important;
+  min-height: 2.15rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid $df-rule;
+
+  p,
+  .df-masthead-tagline {
+    margin: 0 !important;
+    font-size: 0.9rem;
+    color: $df-slate;
+    line-height: 1.25;
+  }
+}
+
+.df-stream {
+  .df-entry {
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid $df-rule;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .df-entry-date {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: $df-slate;
+    margin-bottom: 0.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .df-entry-title {
+    margin: 0 0 0.65rem 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    line-height: 1.3;
+
+    .df-title-link {
+      color: $df-ink-strong;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease, color 0.15s ease;
+
+      &:hover {
+        color: $df-ink-strong;
+        border-bottom-color: $df-link-underline;
+      }
+    }
+
+    .df-external-link::after {
+      content: " \2197";
+      font-size: 0.8em;
+      color: $df-slate-muted;
+    }
+
+    .df-permalink {
+      display: inline-block;
+      margin-left: 0.35rem;
+      font-size: 0.78rem;
+      vertical-align: 0.1em;
+      color: $df-slate-muted;
+      text-decoration: none;
+      border-bottom: none;
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: $df-ink-strong;
+      }
+    }
+  }
+
+  .df-entry-excerpt {
+    margin: 0 0 0.85rem 0;
+    color: $df-ink;
+    font-size: 0.98rem;
+    line-height: 1.66;
+  }
+
+  .df-entry-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: $df-slate;
+  }
+
+  .df-read-more {
+    color: $df-link;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid $df-link-underline;
+    padding-bottom: 1px;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+
+    &:hover {
+      color: $df-ink-strong;
+      border-bottom-color: $df-ink-strong;
+      background-color: $df-surface;
+    }
+  }
+
+  .df-entry-sep {
+    color: $df-quote-rule;
+  }
+
+  .df-entry-categories {
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    color: $df-slate-muted;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Archive Page
+// -----------------------------------------------------------------------------
+
+.df-archive {
+  .df-archive-year {
+    margin-bottom: 2.25rem;
+  }
+
+  .df-archive-year-heading {
+    font-size: 0.76rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase;
+    color: $df-slate !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.9rem !important;
+    padding-bottom: 0.4rem !important;
+    border-bottom: 1px solid $df-rule !important;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .df-archive-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .df-archive-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1.25rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted $df-rule;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .df-archive-date {
+    flex: 0 0 118px;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: $df-slate;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .df-archive-link {
+    color: $df-ink-strong;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    line-height: 1.45;
+    transition: border-color 0.15s ease;
+
+    &:hover {
+      border-bottom-color: $df-link-underline;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .df-archive-item {
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .df-archive-date {
+      flex: none;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Single Post Header & Metadata
+// -----------------------------------------------------------------------------
+
+header#title-block-header {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid $df-rule;
+
+  .title {
+    font-size: 1.48rem;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+    line-height: 1.26;
+    color: $df-ink-strong;
+    margin-bottom: 0.55rem;
+  }
+
+  .subtitle, .description {
+    color: $df-slate;
+    font-size: 1rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .quarto-categories {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+
+    .quarto-category {
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $df-slate;
+      background-color: transparent;
+      border: 1px solid $df-rule;
+      border-radius: 2px;
+      padding: 0.12rem 0.45rem;
+      opacity: 1;
+    }
+  }
+
+  .quarto-title-meta {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.75rem;
+    margin-top: 0.9rem !important;
+    padding: 0;
+    grid-template-columns: none !important;
+
+    &:not(:has(div)) {
+      display: none !important;
+    }
+  }
+
+  .quarto-title-meta-heading {
+    font-size: 0.64rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: $df-slate-muted;
+    margin-bottom: 0.1rem;
+  }
+
+  .quarto-title-meta-contents {
+    font-size: 0.82rem;
+    color: $df-slate;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Hide title block on homepage (we use our custom .df-masthead)
+body.df-home header#title-block-header {
+  display: none;
+}
+
+// -----------------------------------------------------------------------------
+// About Page Editorial Header & Publications
+// -----------------------------------------------------------------------------
+
+.df-about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $df-rule;
+
+  > p {
+    margin: 0 !important;
+    flex-shrink: 0;
+  }
+
+  .df-about-photo {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid $df-rule;
+    flex-shrink: 0;
+    filter: saturate(0.88);
+  }
+
+  .df-about-bio {
+    p {
+      margin-bottom: 0.75rem;
+      line-height: 1.65;
+    }
+  }
+
+  .df-about-links {
+    margin-top: 0.35rem;
+
+    p {
+      margin: 0;
+      font-size: 0.76rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $df-slate;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.1rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.df-publications {
+  ol {
+    padding-left: 1.35rem;
+    margin-top: 0.75rem;
+
+    li {
+      margin-bottom: 0.95rem;
+      line-height: 1.6;
+      font-size: 0.94rem;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Footer Colophon
+// -----------------------------------------------------------------------------
+
+footer.footer {
+  background-color: $df-bg !important;
+  border-top: none !important;
+  color: $df-slate-muted;
+  font-size: 0.76rem;
+  margin-top: 3rem;
+  padding-bottom: 2.5rem;
+
+  .nav-footer {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.25rem 1.5rem 0 1.5rem;
+    border-top: 1px solid $df-rule;
+    min-height: auto;
+    color: $df-slate-muted;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $df-slate;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: $df-ink-strong;
+        border-bottom-color: $df-link-underline;
+      }
+    }
+  }
+}
+
+// Quiet anchor links on headings (hide on listing titles and archive years)
+.anchorjs-link {
+  color: $df-slate-muted !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.df-entry-title .anchorjs-link,
+.df-archive-year-heading .anchorjs-link {
+  display: none !important;
+}
