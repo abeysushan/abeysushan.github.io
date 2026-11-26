@@ -1,17 +1,16 @@
 ---
-title: "Why this space?"
+title: "A space for musings on public health practice"
 author: "Abey Sushan"
 date: "2025-06-17"
-categories: [news]
+categories: [announcement]
 ---
 
-I have tried all platforms to try and document what I find interesting... tumblr, blogger, wordpress... But the tinkerer in me was never satisfied. He was always on the look-out for something else to tinker with. This too, is one such effort. But this time, there is a difference. 
+This space is created as a place for me to explore areas and topics I find interesting.  It may sometimes be a rant on a specific topic. It may just be a note on something interesting I noticed. It will mostly be about the public health landscape of Kerala, India and the world. It can be about other things too. 
 
-While the earlier ones were vain efforts at self actualization, this space has a goal. I want to nurture this space as a place to document the few things I find interesting -- mostly in the public health domain of India, but not exclusively. 
+Over time, this space may evolve into a chronicling of my journey in public health. 
 
 ![](thumbnail.jpg)
 
-May be it will turn out to be a public health digest, I don't know yet. But I am here to see where this leads.
 
 ::: {.callout-note}
 This space is not intended to be educational.
