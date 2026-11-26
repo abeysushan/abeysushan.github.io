@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>H Quotient</title>
+<link>https://blog.hquotient.org/</link>
+<atom:link href="https://blog.hquotient.org/index.xml" rel="self" type="application/rss+xml"/>
+<description>notes on public health practice - by Abey Sushan.</description>
+<generator>quarto-1.11.9</generator>
+<lastBuildDate>Wed, 18 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Lessons from the recent loss of measles elimination status by the US</title>
+  <dc:creator>Abey Sushan</dc:creator>
+  <link>https://blog.hquotient.org/posts/us-measles-2026/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The Pan American Health Organization’s November 17, 2026 decision to revoke the United States’ measles-elimination status marks a profound, self-inflicted failure in modern public health. Held continuously since 2000, that designation collapsed after the same viral lineage circulated uninterrupted for more than twelve months. By November 2026, the Centers for Disease Control and Prevention had confirmed 5,412 cases across nearly every state—more than double 2025’s tally and the highest national burden since 1991—alongside 48 outbreaks, multiple deaths, over 160 infections in pregnant women since 2025, and 13 cases of congenital measles. Escalating outbreaks in West Texas, South Carolina, and Pennsylvania exposed a sobering reality: biological elimination without institutional vigilance is entirely reversible.</p>
+<p>Epidemiologically, this resurgence reflects the unforgiving mathematics of herd immunity. Because measles is among the most contagious human pathogens, preventing sustained transmission requires at least 95% population immunity via two doses of the measles-mumps-rubella (MMR) vaccine, which confers roughly 97% protection. Over recent years, U.S. kindergarten MMR coverage slipped from 95.2% to approximately 92.4%–92.7%, driven by expanding non-medical exemptions. National averages further obscured dangerous geographic clustering, where pockets of under-immunized communities acted as dry tinder for imported cases. Consequently, infants too young for their first dose and immunocompromised individuals lost the protective shield of community immunity, paying the highest price for others’ vaccine refusal. Rather than swiftly extinguishing sparks through aggressive ring vaccination and contact tracing, overwhelmed local health departments watched isolated clusters coalesce into sustained, multi-state endemic transmission.</p>
+<p>Politically and institutionally, the American setback is an indictment of fragmented governance and legitimized vaccine skepticism. Public health specialists have rightly criticized federal health leadership under Secretary Robert F. Kennedy Jr.&nbsp;for amplifying doubts about immunization safety and eroding public trust when unequivocal scientific messaging was essential. Allowing broad philosophical exemptions and weakening school-entry enforcement hollowed out decades of bipartisan public health consensus. Simultaneously, years of chronic underfunding left county health departments lacking surge epidemiologists and real-time surveillance capacity. While the CDC’s late-2026 allocation of $100 million to state and local jurisdictions acknowledges the emergency, reactive spending cannot instantly repair dismantled community trust. The United States proved that world-class biomedical innovation fails when misinformation outpaces primary prevention.</p>
+<p>For India and Kerala, the American experience offers an urgent warning against public health complacency. Under its National Zero Measles-Rubella Elimination Campaign, India has pushed national coverage above 90%—reaching 93.7% for the first dose and 92.2% for the second—yet still recorded over 15,200 cases between April and September 2026, proving that high aggregate numbers cannot offset district-level immunity gaps. Even Kerala, despite its celebrated primary healthcare indicators, witnessed a deadly outbreak in Malappuram in September 2026 exceeding 100 cases and claiming young lives, where two-dose MR completion lagged around 63% to 70%. Both national and state systems must treat elimination as a continuous operational discipline: tracking cohort immunization down to the panchayat and block levels to sustain over 95% coverage, integrating digital registries with catch-up micro-planning to reach missed-dose children before imported transmission takes root, and engaging trusted local physicians and community leaders to counter digital misinformation early.</p>
+
+
+
+ ]]></description>
+  <category>public health</category>
+  <category>measles</category>
+  <category>immunization</category>
+  <guid>https://blog.hquotient.org/posts/us-measles-2026/</guid>
+  <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>A space for musings on public health practice</title>
+  <dc:creator>Abey Sushan</dc:creator>
+  <link>https://blog.hquotient.org/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This space is created as a place for me to explore areas and topics I find interesting. It may sometimes be a rant on a specific topic. It may just be a note on something interesting I noticed. It will mostly be about the public health landscape of Kerala, India and the world. It can be about other things too.</p>
+<p>Over time, this space may evolve into a chronicling of my journey in public health.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This space is not intended to be educational.</p>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>announcement</category>
+  <guid>https://blog.hquotient.org/posts/welcome/</guid>
+  <pubDate>Tue, 17 Jun 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

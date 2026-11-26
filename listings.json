@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/us-measles-2026/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/us-measles-2026/index.html",
