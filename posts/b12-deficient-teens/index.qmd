@@ -1,0 +1,12 @@
+---
+title: "A case for food fortification with vitamin B12 in India"
+author: "Abey Sushan"
+date: "2026=11-27"
+description: "The ICMR-NIN SAMPADA survey finds that two-thirds of Indian adolescents are vitamin B12 deficient, while iron deficiency drives just 27% of anaemia cases. These findings expose the limits of blanket iron supplementation and highlight the urgent need for targeted diagnostics and B12 intervention."
+external-url: "https://the420.in/icmr-survey-india-anemia-vitamin-b12-deficiency/"
+categories: [food fortification, teens, B12 deficiency, SAMPADA, ICMR]
+---
+
+The Indian Council of Medical Research–National Institute of Nutrition (ICMR-NIN) has released findings from its 2023–25 SAMPADA survey, analyzing over 1.7 lakh venous blood samples across 183 districts—a crucial dataset designed to fill the gap left when anaemia indicators were excluded from the NFHS-6 fact sheets earlier this year. The headline prevalence figures remain sobering: 55.9% of non-pregnant women aged 15–49 and 46.3% of adolescent girls are anaemic. Yet the real epidemiological story lies in the etiology breakdown: only about 27% of anaemia cases involve iron deficiency, while roughly two-thirds of Indian adolescents (66.1% of boys and 65.4% of girls) and 63.1% of pregnant women are deficient in vitamin B12.
+  
+For public health programmes, this is an inflection point. Blanket iron–folic acid supplementation under initiatives like Anaemia Mukt Bharat inevitably hits an epidemiological ceiling when nearly three-quarters of anaemia is not driven by iron deficiency and widespread B12 depletion—alongside underlying hemoglobinopathies and chronic inflammation—goes unaddressed. Simply intensifying iron distribution will not move the needle further and risks unnecessary iron loading in non-deficient individuals; the next phase of India's anaemia strategy must shift from presumptive mass supplementation to primary-care diagnostic triage, dietary diversification, and targeted B12 intervention.
