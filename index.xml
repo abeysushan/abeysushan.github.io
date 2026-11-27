@@ -10,7 +10,30 @@
 <atom:link href="https://blog.hquotient.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>notes on public health practice - by Abey Sushan.</description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A case for food fortification with vitamin B12 in India</title>
+  <dc:creator>Abey Sushan</dc:creator>
+  <link>https://blog.hquotient.org/posts/b12-deficient-teens/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The Indian Council of Medical Research–National Institute of Nutrition (ICMR-NIN) has released findings from its 2023–25 SAMPADA survey, analyzing over 1.7 lakh venous blood samples across 183 districts—a crucial dataset designed to fill the gap left when anaemia indicators were excluded from the NFHS-6 fact sheets earlier this year. The headline prevalence figures remain sobering: 55.9% of non-pregnant women aged 15–49 and 46.3% of adolescent girls are anaemic. Yet the real epidemiological story lies in the etiology breakdown: only about 27% of anaemia cases involve iron deficiency, while roughly two-thirds of Indian adolescents (66.1% of boys and 65.4% of girls) and 63.1% of pregnant women are deficient in vitamin B12.</p>
+<p>For public health programmes, this is an inflection point. Blanket iron–folic acid supplementation under initiatives like Anaemia Mukt Bharat inevitably hits an epidemiological ceiling when nearly three-quarters of anaemia is not driven by iron deficiency and widespread B12 depletion—alongside underlying hemoglobinopathies and chronic inflammation—goes unaddressed. Simply intensifying iron distribution will not move the needle further and risks unnecessary iron loading in non-deficient individuals; the next phase of India’s anaemia strategy must shift from presumptive mass supplementation to primary-care diagnostic triage, dietary diversification, and targeted B12 intervention.</p>
+
+
+
+ ]]></description>
+  <category>food fortification</category>
+  <category>teens</category>
+  <category>B12 deficiency</category>
+  <category>SAMPADA</category>
+  <category>ICMR</category>
+  <guid>https://blog.hquotient.org/posts/b12-deficient-teens/</guid>
+  <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Why Kerala’s crackdown on unregulated cosmetics and supplements matter</title>
   <dc:creator>Abey Sushan</dc:creator>
