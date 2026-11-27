@@ -145,16 +145,44 @@ body {
     background-color: $df-bg !important;
     border-bottom: none !important;
     box-shadow: none !important;
-    padding-top: 0.65rem;
-    padding-bottom: 0.65rem;
-  }
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
 
-  .quarto-secondary-nav .quarto-page-breadcrumbs .breadcrumb {
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $df-slate;
-    margin-bottom: 0;
+    .container-fluid {
+      align-items: center;
+    }
+
+    .quarto-btn-toggle,
+    .quarto-search-button {
+      color: $df-ink !important;
+    }
+
+    a.no-decor {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      border-bottom: none;
+      cursor: pointer;
+    }
+
+    .quarto-secondary-nav-title {
+      font-size: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1.25 !important;
+      display: inline-flex;
+      align-items: center;
+
+      &::before {
+        content: "\2605\00a0\00a0H Quotient";
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: $df-ink-strong;
+        line-height: 1.25;
+      }
+    }
   }
 
   #quarto-sidebar.sidebar {

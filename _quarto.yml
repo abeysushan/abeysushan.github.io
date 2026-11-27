@@ -8,6 +8,7 @@ website:
   site-url: https://blog.hquotient.org
   description: "notes on public health practice - by Abey Sushan."
   favicon: favicon.svg
+  bread-crumbs: false
   open-graph: true
   twitter-card: true
   sidebar:
